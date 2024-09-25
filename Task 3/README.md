@@ -25,7 +25,7 @@ The formattedBalances array is created but not used in the final rows mapping, r
 
 The getPriority function is moved outside the component to prevent it from being recreated on every render.
 
-##Simplified and Efficient Filtering and Sorting:
+## Simplified and Efficient Filtering and Sorting:
 
 The filtering and sorting logic is simplified and separated, making it easier to read and more efficient. Redundant conditions are removed, and the logic is streamlined to only check necessary conditions.
 
@@ -33,7 +33,7 @@ The filtering and sorting logic is simplified and separated, making it easier to
 
 The useMemo hook for sortedBalances is now correctly dependent only on balances, as prices are not required for sorting or filtering.
 
-##Stable Key Generation:
+## Stable Key Generation:
 
 The key for each row is generated using a combination of currency and blockchain, ensuring stability even if the order of balances changes.
 
